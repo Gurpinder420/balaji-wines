@@ -810,15 +810,7 @@
     filter: grayscale(50%) invert(10%);
     display: block;
   }
-  .map-overlay {
-    position: absolute; top: 1rem; left: 1rem;
-    background: rgba(13,10,5,0.9);
-    padding: 0.8rem 1rem;
-    border-left: 2px solid var(--gold);
-  }
-  .map-overlay p { font-size: 0.75rem; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; }
-  .map-overlay span { font-size: 0.65rem; color: var(--text-light); }
-
+ 
   /* SOCIAL */
   .social-links {
     display: flex; gap: 1rem; margin-top: 2rem;
