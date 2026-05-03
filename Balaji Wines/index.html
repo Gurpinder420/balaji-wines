@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balaji Wines — Where Every Bottle Tells a Story</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="age-gate">
+  <div class="gate-logo">Balaji Wines</div>
+  <div class="gate-tagline">— Where every bottle tells a story —</div>
+  <div class="gate-divider"></div>
+  <div class="gate-age">Please confirm your age to enter</div>
+  <p>This website contains content related to alcohol. You must be 25 years of age or older to enter. By clicking "I Am 25+", you confirm that you meet the legal drinking age requirement in your country.</p>
+  <div class="gate-buttons">
+    <button class="gate-btn gate-btn-yes" onclick="enterSite()">I Am 25+</button>
+    <button class="gate-btn gate-btn-no" onclick="window.location.href='https://google.com'">I Am Under 25</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo"><img src="./images/logo.jpeg" alt="" srcset=""></a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about-strip">About</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-phone">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    +91 91363 86453
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about-strip" onclick="closeMobile()">About</a>
+  <a href="#categories" onclick="closeMobile()">Categories</a>
+  <a href="#products" onclick="closeMobile()">Products</a>
+  <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="#faq" onclick="closeMobile()">FAQs</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-img">
+    <img src="./images/home2.jpeg" alt="Balaji Wines" loading="lazy">
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Est. 1986 · Malad West, Mumbai</div>
+    <h1 class="hero-title">
+      Where Every<br>Bottle Tells<br><em>a Story.</em>
+    </h1>
+    <p class="hero-since">38+ Years of Curating Exceptional Spirits</p>
+    <p class="hero-desc">Mumbai's finest wine & spirits destination. Premium wines, whiskeys, gins, rums, and more — handpicked for every occasion, delivered with expertise and care.</p>
+    <div class="hero-actions">
+      <a href="#categories" class="btn-primary"><span>Explore Collection</span> →</a>
+      <a href="https://api.whatsapp.com/send?phone=919136386453&text=Enquiry%20from%20website" class="btn-outline">WhatsApp Order</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">38+</span>
+      <span class="stat-label">Years Legacy</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">16</span>
+      <span class="stat-label">Categories</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">#1</span>
+      <span class="stat-label">In Malad</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">Premium Wines</div>
+    <div class="marquee-item">Aged Whiskeys</div>
+    <div class="marquee-item">Craft Gins</div>
+    <div class="marquee-item">Fine Rums</div>
+    <div class="marquee-item">Artisan Vodkas</div>
+    <div class="marquee-item">Japanese Sake</div>
+    <div class="marquee-item">Craft Beers</div>
+    <div class="marquee-item">Premium Tequila</div>
+    <div class="marquee-item">Gift Hampers</div>
+    <div class="marquee-item">Malad West · Mumbai</div>
+    <div class="marquee-item">Est. 1986</div>
+    <div class="marquee-item">Premium Wines</div>
+    <div class="marquee-item">Aged Whiskeys</div>
+    <div class="marquee-item">Craft Gins</div>
+    <div class="marquee-item">Fine Rums</div>
+    <div class="marquee-item">Artisan Vodkas</div>
+    <div class="marquee-item">Japanese Sake</div>
+    <div class="marquee-item">Craft Beers</div>
+    <div class="marquee-item">Premium Tequila</div>
+    <div class="marquee-item">Gift Hampers</div>
+    <div class="marquee-item">Malad West · Mumbai</div>
+    <div class="marquee-item">Est. 1986</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about-strip">
+  <div class="about-img-wrap reveal-left">
+    <img src="./images/about3.webp" alt="Balaji Wines Shop">
+    <div class="about-badge">
+      <span class="about-badge-num">38+</span>
+      <span class="about-badge-text">Years of<br>Excellence</span>
+    </div>
+  </div>
+  <div class="about-text reveal-right">
+    <div class="section-eyebrow">Our Story</div>
+    <h2 class="section-title">Mumbai's Most <em>Trusted</em> Wine Destination</h2>
+    <p>Balaji Wines is the biggest wines and spirits retailer from Malad West, Mumbai. Since 1986, we have been proudly serving the community with the widest and most curated selection of premium wines, spirits, and beers.</p>
+    <p>Our knowledgeable staff is always on hand to help you choose the perfect bottle for any occasion — whether you're celebrating a milestone, hosting a gathering, or simply treating yourself to something extraordinary.</p>
+    <p>From Japanese Whiskey to artisan Gins, from sparkling wines to exotic Sake, every bottle in our collection is chosen with passion and purpose.</p>
+    <div class="about-owner">
+      <div class="owner-icon">J</div>
+      <div>
+        <div class="owner-name">Mrs. Jayshree Rajan Poojari</div>
+        <div class="owner-title">Founder & Owner, Balaji Wines</div>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://instagram.com/balajiwines_malad" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/balajiwines" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://linktr.ee/balajiwines" class="social-link" title="Linktree"><i class="fas fa-link"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=919136386453" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="categories-header reveal">
+    <div>
+      <div class="section-eyebrow">Explore</div>
+      <h2 class="section-title">Our <em>Collections</em></h2>
+    </div>
+    <a href="#products" class="btn-outline">View All Categories →</a>
+  </div>
+  <div class="categories-grid reveal">
+    <div class="cat-card large">
+      <img src="./images/whiskey.jpeg" alt="Whiskey">
+      <div class="cat-overlay">
+        <div class="cat-name">Whiskey</div>
+        <!-- <div class="cat-explore">Explore →</div> -->
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/wine.png" alt="Wine">
+      <div class="cat-overlay">
+        <div class="cat-name">Wine</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/gin.jpg" alt="Gin">
+      <div class="cat-overlay">
+        <div class="cat-name">Gin</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/vodka.webp" alt="Vodka">
+      <div class="cat-overlay">
+        <div class="cat-name">Vodka</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/rum.avif" alt="Rum">
+      <div class="cat-overlay">
+        <div class="cat-name">Rum</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/taqila.jpg" alt="Tequila">
+      <div class="cat-overlay">
+        <div class="cat-name">Tequila</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/beer.jpg" alt="Beer">
+      <div class="cat-overlay">
+        <div class="cat-name">Beer</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <img src="./images/gifting.jpg" alt="Gifting">
+      <div class="cat-overlay">
+        <div class="cat-name">Gifting</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+     <div class="cat-card">
+      <img src="./images/rose-wine.jpg" alt="Rose Wine">
+      <div class="cat-overlay">
+        <div class="cat-name">Rose Wine</div>
+        <div class="cat-explore">Explore →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="reveal">
+    <div class="section-eyebrow">Handpicked</div>
+    <h2 class="section-title">Featured <em>Products</em></h2>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/japnese-sake.webp" alt="Japanese Whiskey">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Whiskey</div>
+        <div class="product-name">Japanese Whiskey</div>
+        
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/classic-gin.jpg" alt="Classic Gin">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Gin</div>
+        <div class="product-name">Classic Gin</div>
+     
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/aged-rum.webp" alt="Aged Rum">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Rum</div>
+        <div class="product-name">Aged Rum</div>
+       
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/premium-vodka.jpg" alt="Premium Vodka">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Vodka</div>
+        <div class="product-name">Premium Vodka</div>
+      
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/japnese-sake.webp" alt="Japanese Sake">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Sake</div>
+        <div class="product-name">Japanese Sake</div>
+       
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/lemon-liqueur.webp" alt="Lemon Liqueur">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Liqueur</div>
+        <div class="product-name">Lemon Liqueur</div>
+       
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/honey-mead.webp" alt="Honey Mead">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Mead</div>
+        <div class="product-name">Honey Mead</div>
+       
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img">
+        <img src="./images/feni-delight.webp" alt="Fenni Delight">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Fenni</div>
+        <div class="product-name">Fenni Delight</div>
+        
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:3rem;" class="reveal">
+    <a href="#contact" class="btn-primary"><span>View All Products</span> →</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal" style="text-align:center">
+    <div class="section-eyebrow" style="justify-content:center">What Our Customers Say</div>
+    <h2 class="section-title">Loved By <em>Mumbai</em></h2>
+  </div>
+  <div class="testimonials-track">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"Great products! Really satisfied with the quality and service. Balaji Wines always has exactly what I'm looking for."</div>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Sana Khan</div>
+         </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"Amazing selection and excellent customer service. The staff really know their wines. Highly recommend to everyone in Mumbai!"</div>
+      <div class="testi-author">
+        <div class="testi-avatar">P</div>
+        <div>
+          <div class="testi-name">Priya Tiwari</div>
+         </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"The best place for wines and bulk orders. Perfect for parties and corporate events. I will definitely be coming back again!"</div>
+      <div class="testi-author">
+        <div class="testi-avatar">M</div>
+        <div>
+          <div class="testi-name">Mohini Jadhav</div>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="reveal" style="text-align:center">
+    <div class="section-eyebrow" style="justify-content:center">Got Questions?</div>
+    <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+  </div>
+  <div class="faq-wrap reveal">
+
+    <div class="faq-item">
+      <button class="faq-q">
+        What is the official contact number of Balaji Wines?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">The official contact number of Balaji Wines is <strong>+91 91363 86453</strong>. You can also reach us on WhatsApp for quick enquiries.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        What is the official email address?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Our official email address is <strong>contact@balajiwines.com</strong>. We typically respond within 24 hours.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Where is Balaji Wines located?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">We are located at <strong>Mith Chowk, Marve Road, Orlem, Malad West, Mumbai, Maharashtra 400064</strong>. We are the largest wine shop in Malad, serving Malad, Goregaon, Kandivali and nearby areas.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        When was Balaji Wines established?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Our wine shop has been proudly serving the community since <strong>1986</strong>. With over 38+ years of experience, we have curated a diverse selection of wines and spirits to cater to all tastes and occasions.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Who is the owner of Balaji Wines?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Balaji Wines is owned and led by <strong>Mrs. Jayshree Rajan Poojari</strong>, who has been at the helm of Mumbai's most trusted wine destination since its founding.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Can I order wine online for delivery?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Absolutely! You can browse our selection and place your order online or via WhatsApp. We offer delivery options within our service area. Please note: We never ask for advance payment. Make payment only after delivery via cash or card.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        What types of wines and spirits do you offer?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">We offer an extensive selection including Red, White, Rosé, Sparkling, and Dessert Wines, plus Whiskey, Gin, Vodka, Rum, Tequila, Beer, Sake, Mead, Fenni, Liqueur, Distilled Spirits, and gift hampers — sourced from various regions and vineyards worldwide.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal-left">
+    <div class="section-eyebrow">Find Us</div>
+    <h2 class="contact-info" style="margin:0">
+      <div style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:1.5rem">
+        Visit Us in <em style="font-style:italic;color:var(--gold)">Malad West</em>
+      </div>
+    </h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:rgba(247,240,227,0.65);margin-bottom:2.5rem">Come experience Mumbai's finest selection of wines and spirits in person. Our knowledgeable team is ready to help you find the perfect bottle.</p>
+    <div class="contact-details">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-8-7.3-8-13a8 8 0 0116 0c0 5.7-8 13-8 13z"/><circle cx="12" cy="8" r="2"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Address</div>
+          <div class="contact-value">Mith Chowk, Marve Road, Orlem,<br>Malad West, Mumbai, MH 400064</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Phone / WhatsApp</div>
+          <div class="contact-value"><a href="tel:919136386453">+91 91363 86453</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:contact@balajiwines.com">contact@balajiwines.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="social-links" style="margin-top:2rem">
+      <a href="https://instagram.com/balajiwines_malad" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/balajiwines" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="https://linktr.ee/balajiwines" class="social-link"><i class="fas fa-link"></i></a>
+    </div>
+    <div style="margin-top:1.5rem;padding:1rem;background:rgba(201,168,76,0.08);border-left:2px solid var(--gold);">
+      <p style="font-size:0.75rem;color:var(--gold-pale);line-height:1.6"><strong style="color:var(--gold)">Payment Note:</strong> We never ask for advance payment. Make payment only after delivery via cash or card.</p>
+    </div>
+  </div>
+  <div class="contact-map reveal-right">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0073693!2d72.8381!3d19.1854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6f93c0d0001%3A0x0!2sMith+Chowk%2C+Marve+Road%2C+Orlem%2C+Malad+West%2C+Mumbai!5e0!3m2!1sen!2sin!4v1700000000000"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Balaji Wines Location">
+    </iframe>
+    <div class="map-overlay">
+      <p>Balaji Wines</p>
+      <span>Malad West, Mumbai</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo"><img src="./images/logo.jpeg" alt="Footer Logo" srcset=""></span>
+      <p>Where every bottle tells a story. Mumbai's finest wine & spirits destination since 1986. Proudly serving Malad, Goregaon, Kandivali and beyond.</p>
+      <div class="social-links" style="margin-top:1.5rem">
+        <a href="https://instagram.com/balajiwines_malad" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/balajiwines" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://linktr.ee/balajiwines" class="social-link"><i class="fas fa-link"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=919136386453" class="social-link"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about-strip">About Us</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#categories">Whiskey</a></li>
+        <li><a href="#categories">Wine</a></li>
+        <li><a href="#categories">Gin</a></li>
+        <li><a href="#categories">Vodka</a></li>
+        <li><a href="#categories">Rum</a></li>
+        <li><a href="#categories">Beer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="https://balajiwines.com/terms">Terms & Conditions</a></li>
+        <li><a href="https://balajiwines.com/privacy">Privacy Policy</a></li>
+        <li><a href="https://balajiwines.com/locations">Locations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Balaji Wines. All rights reserved. Est. 1986, Malad West, Mumbai.</p>
+    <p class="responsible">🍷 Drink Responsibly · 25+ Only</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://api.whatsapp.com/send?phone=919136386453&text=Enquiry%20from%20website" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // AGE GATE
+  function enterSite() {
+    document.getElementById('age-gate').style.animation = 'fadeOut .5s forwards';
+    setTimeout(() => { document.getElementById('age-gate').style.display = 'none'; }, 500);
+  }
+  // Add fadeOut keyframe
+  const style = document.createElement('style');
+  style.textContent = '@keyframes fadeOut { to { opacity: 0; pointer-events: none; } }';
+  document.head.appendChild(style);
+
+  // CURSOR
+  // const cursor = document.getElementById('cursor');
+  // const cursorRing = document.getElementById('cursorRing');
+  // let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  // document.addEventListener('mousemove', e => {
+  //   mouseX = e.clientX; mouseY = e.clientY;
+  //   cursor.style.left = mouseX + 'px';
+  //   cursor.style.top = mouseY + 'px';
+  // });
+  // function animateCursor() {
+  //   ringX += (mouseX - ringX) * 0.12;
+  //   ringY += (mouseY - ringY) * 0.12;
+  //   cursorRing.style.left = ringX + 'px';
+  //   cursorRing.style.top = ringY + 'px';
+  //   requestAnimationFrame(animateCursor);
+  // }
+  // animateCursor();
+  // document.querySelectorAll('a, button, .cat-card, .product-card').forEach(el => {
+  //   el.addEventListener('mouseenter', () => {
+  //     cursor.style.width = '20px'; cursor.style.height = '20px';
+  //     cursorRing.style.width = '60px'; cursorRing.style.height = '60px';
+  //   });
+  //   el.addEventListener('mouseleave', () => {
+  //     cursor.style.width = '12px'; cursor.style.height = '12px';
+  //     cursorRing.style.width = '40px'; cursorRing.style.height = '40px';
+  //   });
+  // });
+
+  // NAVBAR SCROLL
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // HAMBURGER
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+  });
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+  function closeMobile() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(b => {
+        b.classList.remove('open');
+        b.nextElementSibling.classList.remove('open');
+      });
+      if (!isOpen) {
+        btn.classList.add('open');
+        answer.classList.add('open');
+      }
+    });
+  });
+
+  // SCROLL REVEAL
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // COUNTER ANIMATION
+  function animateCounter(el, target) {
+    let current = 0;
+    const step = target / 40;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = (target > 10 ? Math.floor(current) : Math.floor(current)) + (el.dataset.suffix || '');
+    }, 40);
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
